@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuenta Amanita Neko</title>
+    <link rel="icon" href="img/Amanitaneko.png">
+
+</head>
+<body>
+
+    <!--- Menu encabezado --->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobrenosotros" onclick="seleccionar()">Nosotros</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contactenos</a></li>
+                    <li><a href="https://ignacio-j3.github.io/pagina-de-cuentas-pymes/" onclick="seleccionar()">Regresar</a></li>
+    
+                 </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+               <i class="fa fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Menu de incicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Amanitaneko.png" alt="">
+            </div>
+            <h1>Amanita Neko</h1>
+            <h2>Instagram @amanitaneko</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/amanitaneko/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sobrenosotros" class="content about">
+
+        <h2 class="title">Sobre Nosotros</h2>
+        <p>
+            Somos una tienda virtual de Chillán.
+            Todos nuestros productos son únicos y hechos a mano. ✋ 🐱
+            Nos especializamos en la creación de pinturas como cuadros en vidrio y lienzos
+            también desarrollamos dioramas con figuras de impresión 3d y pintadas por nosotros, tambien creamos llaveros, 
+            imanes vasos personalizados y otros productos.
+            Buscamos ser una tienda enfocada al area Geek que entregue productos unicos.
+        </p>
+
+        <a href="#sobrenosotros" class="btn" onclick="mostrarFotos()">Mostar fotos referentes</a>
+
+        <div id="galeria-fotos" class="galeria-fotos" style="display: none;">
+            <div class="fila-fotos">
+                <img src="productos/1.jpg" alt="foto1">
+                <img src="productos/2.jpg" alt="foto2">
+                <img src="productos/3.jpg" alt="foto3">
+                <img src="productos/4.JPG" alt="foto4">
+            </div>
+            <div class="fila-fotos">
+                <img src="productos/5.JPG" alt="foto5">
+                <img src="productos/6.JPG" alt="foto6">
+                <img src="productos/8.jpg" alt="foto8">
+            </div>
+            <div class="fila-fotos">
+                <img src="productos/13.jpeg" alt="foto13">
+                <img src="productos/14.png" alt="foto14">
+                <img src="productos/11.jpeg" alt="foto11">
+                <img src="productos/12.jpeg" alt="foto12">
+            </div>
+        </div>
+
+    </section>
+    <script src="scriptbtn.js"></script>
+
+    <section id="contacto" class="content price">
+        <article class="contain">
+            <h2 class="title">Contactenos</h2>
+            <p>
+                Las compras se realiza a través de nuestras redes sociales.
+            </p>
+            <a href="wa.me/+56937438104" class="btn"><i class="fa-brands fa-whatsapp"></i><br>Whatsapp</a>
+            <a href="https://www.instagram.com/amanitaneko/" class="btn"><i class="fa-brands fa-instagram"></i><br>Instagram</a>
+        </article>
+
+    </section>
+
+    <section id="ubicacion" class="content ubicacion">
+    </section>
+    <!--<section id="ubicacion"class="content ubicacion">
+        <h2 class="title"></h2>
+        <figure class="map">
+            <img src="img/" height="220px" width="100%" alt="mapa">
+        </figure>
+    </section>-->
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -111,7 +111,8 @@ html {
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #00ff11;
+    background-color: #fffb00;
+    color: #1e2326;
 }
 
 .logo {
@@ -240,7 +241,7 @@ fila-fotos {
 }
 
 .fila-fotos img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.5); 
 }
 
 /* SECCION RESPONSIVE */

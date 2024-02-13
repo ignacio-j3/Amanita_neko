@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Cuenta Amanita Neko</title>
     <link rel="icon" href="img/Amanitaneko.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -65,27 +66,89 @@
         <article>
             <a href="#sobrenosotros" class="btn" onclick="mostrarFotos()">Mostar fotos referentes</a>
             <a href="https://www.instagram.com/amanitaneko/" class="btn"><i class="fa-brands fa-instagram"></i> Ver fotos en Instagram</a>
+            <br> <br> <br>
         </article>
 
-        <div id="galeria-fotos" class="galeria-fotos" style="display: none;">
-            <div class="fila-fotos">
-                <img src="productos/1.jpg" alt="foto1">
-                <img src="productos/2.jpg" alt="foto2">
-                <img src="productos/4.JPG" alt="foto4">
+        <div id="galeria-fotos" class="galeria-fotos swiper-container" style="display: none;">
+            <div class="swiper-wrapper">
+        
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/1.jpg" alt="foto1">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/2.jpg" alt="foto2">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/3.JPG" alt="foto3">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/4.JPG" alt="foto4">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/5.JPG" alt="foto5">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/6.JPG" alt="foto6">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/7.JPG" alt="foto7">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/8.jpg" alt="foto8">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/9.jpg" alt="foto9">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/10.jpg" alt="foto10">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/11.jpeg" alt="foto11">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/12.jpeg" alt="foto12">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/13.jpeg" alt="foto13">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/14.png" alt="foto14">
+                    </div>
+                </div>
+        
             </div>
-            <div class="fila-fotos">
-                <img src="productos/5.JPG" alt="foto5">
-                <img src="productos/6.JPG" alt="foto6">
-                <img src="productos/8.jpg" alt="foto8">
-            </div>
-            <div class="fila-fotos">
-                <img src="productos/13.jpeg" alt="foto13">
-                <img src="productos/14.png" alt="foto14">
-                <img src="productos/11.jpeg" alt="foto11">
-                <img src="productos/12.jpeg" alt="foto12">
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </section>
     <script src="scriptbtn.js"></script>
 
@@ -113,3 +176,15 @@
     <script src="script.js"></script>
 </body>
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true, // Si deseas que el carrusel sea infinito
+            // Otros parámetros y opciones según sea necesario
+        });
+    });
+</script>
